@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a8618df-997e-4e15-8b63-93288280c47b" name="Default Changelist" comment="added composer and the steampixel\Route library">
-      <change afterPath="$PROJECT_DIR$/service/userService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/backend-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend-test.iml" afterDir="false" />
+    <list default="true" id="6a8618df-997e-4e15-8b63-93288280c47b" name="Default Changelist" comment="added createUsersTable.php, its a php class to add easily the needed table to your mysql database">
+      <change afterPath="$PROJECT_DIR$/database/creatContactsTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Router.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/createUsersTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/userService.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/userService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610626028720</updated>
       <workItem from="1610626030105" duration="6944000" />
-      <workItem from="1610636268940" duration="1046000" />
+      <workItem from="1610636268940" duration="4490000" />
     </task>
     <task id="LOCAL-00001" summary="added .htaccess and database.php with a simple connection">
       <created>1610630332996</created>
@@ -78,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610632663992</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added createUsersTable.php, its a php class to add easily the needed table to your mysql database">
+      <created>1610637529386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610637529386</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added .htaccess and database.php with a simple connection" />
     <MESSAGE value="added composer and the steampixel\Route library" />
-    <option name="LAST_COMMIT_MESSAGE" value="added composer and the steampixel\Route library" />
+    <MESSAGE value="added createUsersTable.php, its a php class to add easily the needed table to your mysql database" />
+    <option name="LAST_COMMIT_MESSAGE" value="added createUsersTable.php, its a php class to add easily the needed table to your mysql database" />
   </component>
 </project>
