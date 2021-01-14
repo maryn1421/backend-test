@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a8618df-997e-4e15-8b63-93288280c47b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
+    <list default="true" id="6a8618df-997e-4e15-8b63-93288280c47b" name="Default Changelist" comment="added .htaccess and database.php with a simple connection">
+      <change afterPath="$PROJECT_DIR$/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +52,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610626028720</updated>
-      <workItem from="1610626030105" duration="2987000" />
+      <workItem from="1610626030105" duration="5181000" />
     </task>
+    <task id="LOCAL-00001" summary="added .htaccess and database.php with a simple connection">
+      <created>1610630332996</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610630332996</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added .htaccess and database.php with a simple connection" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .htaccess and database.php with a simple connection" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
