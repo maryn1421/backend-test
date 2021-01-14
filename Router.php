@@ -8,7 +8,7 @@ use Steampixel\Route;
 
 // Add your first route
 Route::add('/contacts', function(){
-    include_once ('./service/userService.php');
+    include_once('./service/contactService.php');
 
 
     $contacts = getALlContacts();
@@ -18,8 +18,8 @@ Route::add('/contacts', function(){
 
     echo $myJSON;
 });
-Route::add('/user/([0-9]*)', function($id){
-    echo 'Edit user with id '.$id.'<br>';
+Route::add('/contact/([0-9]*)', function($id){
+
 });
 
 
