@@ -15,6 +15,9 @@ Route::add('/', function(){
 
     echo $myJSON;
 });
+Route::add('/user/([0-9]*)', function($id){
+    echo 'Edit user with id '.$id.'<br>';
+});
 
 // Run the router
 Route::run('/');

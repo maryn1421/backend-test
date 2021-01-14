@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a8618df-997e-4e15-8b63-93288280c47b" name="Default Changelist" comment="added .htaccess and database.php with a simple connection">
-      <change afterPath="$PROJECT_DIR$/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
+    <list default="true" id="6a8618df-997e-4e15-8b63-93288280c47b" name="Default Changelist" comment="added composer and the steampixel\Route library">
+      <change afterPath="$PROJECT_DIR$/service/userService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/backend-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend-test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -23,7 +26,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/steampixel/simple-php-router" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1n3kBnwhczHl1O0onohoqdN0gH8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -52,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610626028720</updated>
-      <workItem from="1610626030105" duration="5181000" />
+      <workItem from="1610626030105" duration="6944000" />
+      <workItem from="1610636268940" duration="1046000" />
     </task>
     <task id="LOCAL-00001" summary="added .htaccess and database.php with a simple connection">
       <created>1610630332996</created>
@@ -61,25 +71,33 @@
       <option name="project" value="LOCAL" />
       <updated>1610630332996</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added composer and the steampixel\Route library">
+      <created>1610632663992</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610632663992</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added .htaccess and database.php with a simple connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="added .htaccess and database.php with a simple connection" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/database.php</url>
-          <line>18</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added composer and the steampixel\Route library" />
+    <option name="LAST_COMMIT_MESSAGE" value="added composer and the steampixel\Route library" />
   </component>
 </project>
