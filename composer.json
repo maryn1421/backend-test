@@ -1,0 +1,9 @@
+{
+    "require": {
+        "steampixel/simple-php-router": "^0.4.1",
+      "ext-mysqli": "*",
+      "ext-pdo": "*",
+      "ext-mongodb": "*",
+      "ext-json": "*"
+    }
+}
