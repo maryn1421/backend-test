@@ -40,10 +40,28 @@ Route::add('/contact/add', function () {
     else {
         echo 'invalid input';
     }
+}, 'put');
 
-
+Route::add('/edit/email/([0-9]*)', function($id){
 
 }, 'put');
+
+Route::add('/edit/name/([0-9]*)', function($id){
+
+}, 'put');
+
+Route::add('/edit/phone/([0-9]*)', function($id){
+
+}, 'put');
+
+Route::add('/edit/address/([0-9]*)', function($id){
+
+}, 'put');
+
+
+
+
+
 
 
 
