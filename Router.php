@@ -4,6 +4,7 @@
 require_once __DIR__ . '/vendor/autoload.php';
 
 include_once('./service/contactService.php');
+include_once('contactValidation.php');
 
 
 // Use this namespace
@@ -29,6 +30,22 @@ Route::add('/contact/([0-9]*)', function($id){
     echo $myJSON;
 
 });
+
+Route::add('/contact/add', function () {
+    $decoded_input = json_decode(file_get_contents("php://input"), true);
+    header('Content-type: application/json');
+    if (validateNewUser($decoded_input)) {
+        echo  'valid input';
+    }
+    else {
+        echo 'invalid input';
+
+    }
+
+
+
+}, 'put');
+
 
 
 // Run the router
