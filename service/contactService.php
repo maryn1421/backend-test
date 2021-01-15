@@ -65,6 +65,23 @@ function addNewContact($contactData): string
 }
 
 
+function editEmail($contactData, $id): string
+{
+    $email = $contactData["email"];
+    $query = "UPDATE contacts SET email='$email' Where id='$id' ";
+
+    $conn = OpenCon();
+
+    if ($conn->query($query) === TRUE) {
+        return "updating was successfully";
+    } else {
+        return "Error: " . $query . "<br>" . $conn->error;
+    }
+}
+
+
+
+
 
 
 
