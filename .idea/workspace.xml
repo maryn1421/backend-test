@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a8618df-997e-4e15-8b63-93288280c47b" name="Default Changelist" comment="added a validation to new contact route">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6a8618df-997e-4e15-8b63-93288280c47b" name="Default Changelist" comment="finished name editing">
+      <change beforePath="$PROJECT_DIR$/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/createContactsTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/createContactsTable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/contactService.php" beforeDir="false" afterPath="$PROJECT_DIR$/service/contactService.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

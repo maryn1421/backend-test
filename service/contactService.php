@@ -3,7 +3,6 @@
 include('database.php');
 
 
-
 function getALlContacts(): array
 {
     $query = " select * from contacts";
@@ -21,8 +20,6 @@ function getALlContacts(): array
     }
     return $contacts;
 }
-
-
 
 
 function getSingleContact($id): array
@@ -51,17 +48,16 @@ function addNewContact($contactData): string
     $email = $contactData["email"];
     $address = $contactData["address"];
 
-
     $query = "insert into contacts(name, phone, email, address) values ('$name', '$phone', '$email', '$address')";
-
     $conn = OpenCon();
 
     if ($conn->query($query) === TRUE) {
+        CloseCon($conn);
         return "inserting was successfully";
     } else {
+        CloseCon($conn);
         return "Error: " . $query . "<br>" . $conn->error;
     }
-
 }
 
 
@@ -69,16 +65,15 @@ function editEmail($contactData, $id): string
 {
     $email = $contactData["email"];
     $query = "UPDATE contacts SET email='$email' Where id='$id' ";
-
     $conn = OpenCon();
-
     if ($conn->query($query) === TRUE) {
+        CloseCon($conn);
         return "updating was successfully";
     } else {
+        CloseCon($conn);
         return "Error: " . $query . "<br>" . $conn->error;
     }
 }
-
 
 
 function editName($contactData, $id): string
@@ -89,8 +84,10 @@ function editName($contactData, $id): string
     $conn = OpenCon();
 
     if ($conn->query($query) === TRUE) {
+        CloseCon($conn);
         return "updating was successfully";
     } else {
+        CloseCon($conn);
         return "Error: " . $query . "<br>" . $conn->error;
     }
 }
@@ -102,8 +99,10 @@ function editPhone($contactData, $id): string
     $conn = OpenCon();
 
     if ($conn->query($query) === TRUE) {
+        CloseCon($conn);
         return "updating was successfully";
     } else {
+        CloseCon($conn);
         return "Error: " . $query . "<br>" . $conn->error;
     }
 }
@@ -115,21 +114,19 @@ function editAddress($contactData, $id): string
     $conn = OpenCon();
 
     if ($conn->query($query) === TRUE) {
+        CloseCon($conn);
         return "updating was successfully";
     } else {
+        CloseCon($conn);
         return "Error: " . $query . "<br>" . $conn->error;
     }
 }
 
 
-
-
-
-
-
 function getResultsFromDatabase($query) {
     $conn = OpenCon();
     $result = mysqli_query($conn, $query) or die ("could not query database");
+    CloseCon($conn);
     return $result;
 }
 
