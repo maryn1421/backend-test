@@ -84,4 +84,5 @@ http://localhost:8000/edit/address/{id}
 
 The request will return the results ( for example: invalid input, database error, update was successfully)         
 
+This project is made by Mihály Károly Zolnai. If you have any question, feel free to contact me: zolnaimaryn1421@gmail.com
     
