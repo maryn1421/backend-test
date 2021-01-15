@@ -45,7 +45,7 @@ Route::add('/contact/add', function () {
 Route::add('/edit/email/([0-9]*)', function($id){
     $decoded_input = json_decode(file_get_contents("php://input"), true);
     header('Content-type: application/json');
-    if (validateNewUser($decoded_input)) {
+    if (validateUpdate($decoded_input, 'email')) {
         echo  editEmail($decoded_input, $id);
     }
     else {

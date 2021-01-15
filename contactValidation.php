@@ -12,3 +12,15 @@ function validateNewUser($data): bool
 
 
 
+function validateUpdate($data, $type): bool
+{
+    if (isset($data[$type])) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+
+
