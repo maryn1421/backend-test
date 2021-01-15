@@ -35,11 +35,10 @@ Route::add('/contact/add', function () {
     $decoded_input = json_decode(file_get_contents("php://input"), true);
     header('Content-type: application/json');
     if (validateNewUser($decoded_input)) {
-        echo  'valid input';
+        echo  addNewContact($decoded_input);
     }
     else {
         echo 'invalid input';
-
     }
 
 

@@ -44,6 +44,30 @@ function getSingleContact($id): array
 
 
 
+function addNewContact($contactData): string
+{
+    $name = $contactData["name"];
+    $phone = $contactData["phone"];
+    $email = $contactData["email"];
+    $address = $contactData["address"];
+
+
+    $query = "insert into contacts(name, phone, email, address) values ('$name', '$phone', '$email', '$address')";
+
+    $conn = OpenCon();
+
+    if ($conn->query($query) === TRUE) {
+        return "inserting was successfully";
+    } else {
+        return "Error: " . $query . "<br>" . $conn->error;
+    }
+
+}
+
+
+
+
+
 function getResultsFromDatabase($query) {
     $conn = OpenCon();
     $result = mysqli_query($conn, $query) or die ("could not query database");
