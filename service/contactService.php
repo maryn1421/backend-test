@@ -94,6 +94,19 @@ function editName($contactData, $id): string
         return "Error: " . $query . "<br>" . $conn->error;
     }
 }
+function editPhone($contactData, $id): string
+{
+    $phone = $contactData["phone"];
+    $query = "UPDATE contacts SET phone='$phone' Where id='$id' ";
+
+    $conn = OpenCon();
+
+    if ($conn->query($query) === TRUE) {
+        return "updating was successfully";
+    } else {
+        return "Error: " . $query . "<br>" . $conn->error;
+    }
+}
 
 
 

@@ -67,7 +67,14 @@ Route::add('/edit/name/([0-9]*)', function($id){
 }, 'put');
 
 Route::add('/edit/phone/([0-9]*)', function($id){
-
+    $decoded_input = json_decode(file_get_contents("php://input"), true);
+    header('Content-type: application/json');
+    if (validateUpdate($decoded_input, 'phone')) {
+        echo  editPhone($decoded_input, $id);
+    }
+    else {
+        echo 'invalid input';
+    }
 }, 'put');
 
 Route::add('/edit/address/([0-9]*)', function($id){
