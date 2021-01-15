@@ -81,6 +81,22 @@ function editEmail($contactData, $id): string
 
 
 
+function editName($contactData, $id): string
+{
+    $name = $contactData["name"];
+    $query = "UPDATE contacts SET name='$name' Where id='$id' ";
+
+    $conn = OpenCon();
+
+    if ($conn->query($query) === TRUE) {
+        return "updating was successfully";
+    } else {
+        return "Error: " . $query . "<br>" . $conn->error;
+    }
+}
+
+
+
 
 
 
